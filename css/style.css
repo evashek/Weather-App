@@ -1,0 +1,94 @@
+body {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+#bg {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: url(../resources/images/above_the_clouds.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#zipcode {
+	background-color: transparent;
+	position:fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin-bottom: 0;
+	padding: 30px 10px;
+}
+
+input[type="text"] {
+	display: block;
+	/*margin: 0 auto !important;
+	width: 400px !important;*/
+	text-align: center;
+	border:0;
+}
+
+.col-centered {
+	margin: 0 auto;
+	float: none;
+}
+
+.has-error {
+	border: 1px solid #FF7878 !important;
+}
+
+#report {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	/*background-color: rgba(192,192,192,0.5);*/
+	background-color: rgba(0,0,0,0.3);
+	z-index: 100;
+	height: 304px;
+	margin-top: -152px;
+	width: 600px;
+	margin-left: -300px;
+	padding: 20px;
+}
+
+#weather td:not([id]) {
+	text-align: left;
+	font-weight: bold;
+}
+
+#desc {
+	font-style: italic;
+	text-align: left;
+}
+
+#desc:first-letter {
+	text-transform: capitalize;
+}
+
+#weather {
+	margin: 0 auto;
+	text-align: center;
+	color: white;
+	font-size: 20px;
+}
+
+.leftcell {
+	padding: 10px 20px 10px 10px;
+}
+
+.rightcell {
+	padding: 10px 10px 10px 20px;
+}
+
+#name, #condition {
+	font-size: 30px;
+}
+
+#temp {
+	font-size: 75px;
+}

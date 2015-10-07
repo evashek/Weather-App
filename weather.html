@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Weather App</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+		<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/style.css"></style>
+	</head>
+	<body>
+		<div id="bg"></div>
+		<div id="report">
+			<table id="weather">
+				<tr>
+					<td id="name" class="leftcell">Place Name</td>
+					<td class="rightcell"></td>
+					<td id="icon" rowspan="2" style="vertical-align:top; padding-top:10px"></td>
+				</tr>
+				<tr>
+					<td id="temp" class="leftcell" rowspan="3">Temp</td>
+					<td id="desc" class="rightcell">Description</td>
+				</tr>
+				<tr>
+					<td class="rightcell">Humidity</td>
+					<td id="humid" class="rightcell">Humidity %</td>
+				</tr>
+				<tr>
+					<td class="rightcell">Max Temperature</td>
+					<td id="maxTemp">Max Temperature</td>
+				</tr>
+				<tr>
+					<td id="condition" class="leftcell">Weather Condition</td>
+					<td class="rightcell">Min Temperature</td>
+					<td id="minTemp">Min Temperature</td>
+				</tr>
+			</table>
+		</div>
+		<div id="zipcode">
+			<div class="row">
+				<div class="col-lg-3 col-centered">
+					<div class="input-group">
+						<input type="text" id="zcode" class="input-lg form-control" maxlength="5" placeholder="Zip Code" data-toggle="popover" data-placement="top" data-content="Area not found! Please try again."/>
+						<span class="input-group-btn">
+							<button class="btn btn-lg btn-default" id="submit" type="button" style="border:none; border-left: 1px solid #ccc">Find</button>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
