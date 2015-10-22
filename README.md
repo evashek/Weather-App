@@ -1,6 +1,8 @@
 # Weather-App
 A web app that reports the weather condition of an area according to the provided zip code.  Written in Javascript and uses jQuery and Twitter Bootstrap.
 
+[Try it out!](http://evashek.github.io/Weather-App/)
+
 ## Notes
 * Uses the [OpenWeatherMap](http://openweathermap.org/) (OWM) API.
 * Any invalid zip codes will be handled by OWM; app will then handle error accordingly.
