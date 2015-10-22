@@ -4,7 +4,7 @@ $(function() {
 	$('#submit').click(function() {
 		$('#weather').hide();
 		$('#bg').fadeOut("fast");
-		$.getJSON("http://api.openweathermap.org/data/2.5/weather?zip=" + $('#zcode').val() + ",us").done(function(data) {
+		$.getJSON("http://api.openweathermap.org/data/2.5/weather?zip=" + $('#zcode').val() + ",us" + "&APPID=69034f0b70a9f496dc660958a2c3c8b3").done(function(data) {
 			if(data.cod == 200) { // query to OpenWeatherMap was successful
 				$('#zcode').removeClass("has-error").popover("destroy");
 				$('#weather td[id]').empty(); // empty the results of a previous search if any
